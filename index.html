@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="stil.css">
+</head>
+
+<body>
+
+<h1>BODY MASS INDEX CALCULATOR</h1>
+
+<p>Enter your weight ( kg ) Example : 100 </p>
+<input id="weight" type="text">
+<p>Enter your height ( cm ) Example : 1.80<br>Put . between meter and centimeter</p>
+<input id="height" type="text">
+<br>
+<button onclick="calc()">CALCULATE</button>
+
+<div id="result"></div>
+
+<div id="result2"></div>
+
+
+</body>
+
+<script>
+
+function calc() {
+
+const myweight = document.getElementById("weight").value;
+const myheight = document.getElementById("height").value;
+const result = myweight / ( myheight * myheight );
+const resultt = Math.round(result);
+
+
+
+if ( resultt < 18.5 ) {
+
+    document.getElementById("result").innerHTML ="Your body mass index is " + resultt ;
+    document.getElementById("result2").innerHTML = "You are weak" ;
+
+}
+
+else if ( resultt >= 18.5 && resultt < 24.9 ) {
+
+document.getElementById("result").innerHTML ="Your body mass index is " + resultt ;
+document.getElementById("result2").innerHTML = "You are normal" ;
+
+}
+
+else if ( resultt >= 25 && resultt < 29.9 ) {
+
+document.getElementById("result").innerHTML ="Your body mass index is " + resultt ;
+document.getElementById("result2").innerHTML = "You are overweight" ;
+
+}
+
+else if ( resultt >= 30 && resultt < 39.9 ) {
+
+document.getElementById("result").innerHTML ="Your body mass index is " + resultt ;
+document.getElementById("result2").innerHTML = "You are obes" ;
+
+}
+
+else if ( resultt >= 40 ) {
+
+document.getElementById("result").innerHTML ="Your body mass index is " + resultt ;
+document.getElementById("result2").innerHTML = "You are fatal obes" ;
+
+}
+
+
+}
+
+
+</script>
+
+
+</html>

@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+    margin-top:100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: khaki;
+}
+
+#result, #result2 {
+
+margin: auto;
+margin-top: 5px;
+height: 50px;
+width:fit-content;
+min-width: 200px;
+background-color:black;
+color: khaki;
+padding: 5px;
+font-size: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+button {
+    margin: auto;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+input, p, button {
+    font-size: 20px;
+}
+
+#result {
+    margin-top:40px;
+}
